@@ -27,7 +27,7 @@ body{
 .call-btn{
     font-family: 'Roboto';
     font-weight: bold;
-    font-size: clamp(15px, 0.2rem + 2vw, 15px);
+    font-size: 18px;
     color: white;
     padding: 0.3em 0.6em;
     border-style: none;
