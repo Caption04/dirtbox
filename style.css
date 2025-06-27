@@ -311,15 +311,20 @@ h1{
     bottom: 25%;
     font-family: 'Poppins';
     font-weight: bold;
-    font-size: clamp(15px, 0.2rem + 2vw, 18px);
+    font-size: clamp(15px, 0.2rem + 2vw, 24px);
     margin: 0 0 0 0.9em;
+}
+@media screen and (min-width: 860px) {
+    .vehicle-title{
+      bottom: 200px;
+    }
 }
 
 .vehicle-description{
     position: absolute;
     z-index: 2;
     bottom: 14%;
-    font-size: clamp(12px, 0.2rem + 2vw, 15px);
+    font-size: clamp(12px, 0.2rem + 2vw, 18px);
     font-family: 'Roboto';
     font-weight: 400;
     color: white;
@@ -335,7 +340,7 @@ h1{
 .section-btn{
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: clamp(12px, 0.2rem + 2vw, 15px);
+    font-size: clamp(12px, 0.2rem + 2vw, 18px);
     border-style: none;
     padding: 0.3em 0.6em;
     border-radius: 5px;
@@ -358,6 +363,12 @@ h1{
         margin: 0;
     }
 }
+@media screen and (min-width: 500px) and (max-width: 860px) {
+  .vehicle-description{
+    font-size: clamp(7px, 0.2rem + 2vw, 12px)
+  }
+}
+
 
 .disabled{
     position: absolute;
