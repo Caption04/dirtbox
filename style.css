@@ -312,7 +312,7 @@ h1{
     font-family: 'Poppins';
     font-weight: bold;
     font-size: clamp(15px, 0.2rem + 2vw, 18px);
-    margin: 0 0 0 0.7em;
+    margin: 0 0 0 0.9em;
 }
 
 .vehicle-description{
@@ -323,7 +323,7 @@ h1{
     font-family: 'Roboto';
     font-weight: 400;
     color: white;
-    margin: 0 1em 0 1em;
+    margin: 0 1em 0 1.2em;
 }
 
 .section-btns{
@@ -339,7 +339,7 @@ h1{
     border-style: none;
     padding: 0.3em 0.6em;
     border-radius: 5px;
-    margin: 0 0 0 1em;
+    margin: 0 0 0 1.2em;
 }
 
 .reserve-btn{
