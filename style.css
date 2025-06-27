@@ -69,12 +69,12 @@ body{
 
 .header i{
     color: white;
-    font-size: clamp(10px, 0.1rem + 3vw, 24px);
+    font-size: clamp(12px, 0.1rem + 3vw, 24px);
 }
 
 .menu{
     color: white;
-    font-size: clamp(10px, 0.1rem + 2vw, 32px);
+    font-size: clamp(12px, 0.1rem + 2vw, 32px);
     display: flex;
     align-items: center;
     gap: 2vw;
@@ -196,7 +196,7 @@ h1{
     color: white;
     font-family: 'Poppins';
     font-weight: bold;
-    font-size: clamp(16px, 0.2rem + 3vw, 50px);
+    font-size: clamp(18px, 0.2rem + 3vw, 50px);
     text-align: center;
     margin-top: 10vw;
     margin-bottom: 5vw;
@@ -207,7 +207,7 @@ h1{
 .hero-content p{
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: clamp(10px, 0.2rem + 2vw, 22px);
+    font-size: clamp(12px, 0.2rem + 2vw, 22px);
     text-align: center;
     margin-bottom: 20vw;
     position: relative;
@@ -225,7 +225,7 @@ h1{
     box-shadow: 2px 3px 16px black;
     font-family: 'Roboto';
     font-weight: bold;
-    font-size: clamp(10px, 0.2rem + 2vw, 18px);
+    font-size: clamp(12px, 0.2rem + 2vw, 18px);
     position: relative;
     z-index: 1;
 }
@@ -253,7 +253,7 @@ h1{
 }
 
 .filters ul li button{
-    font-size: clamp(10px, 0.2rem + 2vw, 18px);
+    font-size: clamp(12px, 0.2rem + 2vw, 18px);
     padding: 0.4em 0.8em;
     background: none;
     border-style: none;
@@ -319,7 +319,7 @@ h1{
     position: absolute;
     z-index: 2;
     bottom: 14%;
-    font-size: clamp(10px, 0.2rem + 2vw, 15px);
+    font-size: clamp(12px, 0.2rem + 2vw, 15px);
     font-family: 'Roboto';
     font-weight: 400;
     color: white;
@@ -335,7 +335,7 @@ h1{
 .section-btn{
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: clamp(10px, 0.2rem + 2vw, 15px);
+    font-size: clamp(12px, 0.2rem + 2vw, 15px);
     border-style: none;
     padding: 0.3em 0.6em;
     border-radius: 5px;
@@ -345,6 +345,11 @@ h1{
 .reserve-btn{
     background: #163987;
     color: white;
+}
+
+.cart-btn{
+  background: white;
+  color: black;
 }
 
 @media screen and (min-width: 500px) {
@@ -554,7 +559,7 @@ h1{
 
 .btn-primary {
   background: #191A19;
-  color: #163987;
+  color: #fff;
   padding: 0.7rem 1.5rem;
   border-radius: 5px;
   font-weight: bold;
@@ -622,10 +627,18 @@ footer h4,
 .footer-contact p,
 .footer-links ul,
 .footer-certifications {
-  margin: 1rem 0;
   font-size: clamp(10px, 0.2rem + 2vw, 14px);
   font-family: "Roboto";
   font-weight: 300;
+}
+
+.footer-certifications h4{
+  margin-bottom: 1rem;
+}
+
+.footer-contact p,
+.footer-links ul{
+    margin: 1rem 0;
 }
 
 .footer-links ul {
@@ -637,7 +650,10 @@ footer h4,
 .footer-certifications a {
   color: #fff;
   text-decoration: none;
-  /* margin: 1rem 0; */
+}
+
+.footer-links ul li{
+  margin: 0 0 1em 0;
 }
 
 .footer-links a:hover,
