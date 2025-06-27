@@ -357,6 +357,7 @@ h1{
 .disabled{
     position: absolute;
     backdrop-filter: brightness(20%);
+    -webkit-backdrop-filter: brightness(20%);
     height: 100%;
     top: 0;
     width: 100%;
