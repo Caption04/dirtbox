@@ -4,7 +4,7 @@ const path = require("path");
 const cors = require("cors");
 
 const app = express();
-const PORT = 3000;
+// const PORT = 3000;
 
 
 // Allow frontend to access this backend
@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 });
 
 // Start Server
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });
