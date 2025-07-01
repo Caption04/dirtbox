@@ -266,7 +266,7 @@ vehicleContainer.addEventListener('click', (e) => {
 // Cart Button
 const cartButton = document.querySelector(".cart");
 cartButton.addEventListener("click", ()=>{
-    window.location.href = '/cart.html';
+    window.location.href = 'https://caption04.github.io/cart.html';
 })
 
 
