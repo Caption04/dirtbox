@@ -325,11 +325,11 @@ Global Variables
     transition: var(--transition);
 }
 
-.menu:hover{
+.menu:hover .menu-icon{
   transform: rotateZ(-90deg);
 }
 
-.menu:active{
+.menu:active .menu-icon{
   transform: rotateZ(-90deg);
 }
 
