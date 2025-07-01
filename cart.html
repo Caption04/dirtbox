@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="cart.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="cart.js" defer></script>
+
+</head>
+<body>
+
+    <button class="back">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </button>
+  <main class="cart-container">
+    <h1>Your Cart</h1>
+    <div id="cart-items">
+      <!-- Cart items will be injected here by JS -->
+    </div>
+    <button id="clear-cart">Clear Cart</button>
+    <button class="display-quote" id="submit-cart">Request Quote</button>
+  </main>
+
+  <!-- Form asking for details  -->
+  <div id="quote-form-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Request a Quote</h2>
+      <form id="quote-form">
+        <label>
+          Name:<br />
+          <input type="text" id="user-name" required />
+        </label><br /><br />
+        <label>
+          Email:<br />
+          <input type="email" id="user-email" required />
+        </label><br /><br />
+        <button type="submit">Send Quote</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
