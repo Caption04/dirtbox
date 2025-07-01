@@ -197,6 +197,7 @@ Global Variables
   background: var(--clr-secondary);
   z-index: 1000;
   transform: translateY(-100%);
+  visibility: hidden;
   transition: var(--transition);
   width: 100vw;
   height: fit-content
@@ -204,6 +205,7 @@ Global Variables
 
 .phone-search.open{
   transform: translateY(0);
+  visibility: visible;
 }
 
 .close-search{
