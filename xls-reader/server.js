@@ -10,6 +10,11 @@ const app = express();
 // Allow frontend to access this backend
 app.use(cors());
 
+// Allow only requests from your frontend URL
+app.use(cors({
+  origin: 'index.js', // Replace with your actual frontend URL (e.g., https://your-app.com)
+}));
+
 // Load Excel File 
 const workbook = xlsx.readFile(path.join(__dirname, "data.xlsx"));
 

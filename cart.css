@@ -58,6 +58,7 @@ GLOBAL STYLES
 */
 
 body {
+  text-decoration: none;
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;

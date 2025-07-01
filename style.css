@@ -309,12 +309,12 @@ Global Variables
 
 .header i{
     color: white;
-    font-size: clamp(12px, 0.1rem + 3vw, 24px);
+    font-size: clamp(15px, 0.1rem + 3vw, 24px);
 }
 
 .menu{
     color: white;
-    font-size: clamp(12px, 0.1rem + 2vw, 32px);
+    font-size: clamp(15px, 0.1rem + 2vw, 32px);
     display: flex;
     align-items: center;
     gap: 2vw;
@@ -325,17 +325,18 @@ Global Variables
     transition: var(--transition);
 }
 
-.menu-icon:hover{
+.menu:hover{
   transform: rotateZ(-90deg);
 }
 
-.menu-icon:active{
+.menu:active{
   transform: rotateZ(-90deg);
 }
 
 .cart{
   position: relative;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cart-icon{

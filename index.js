@@ -5,7 +5,7 @@
 ////////////////////////
 
 // Menu Open
-const openMenu = document.querySelector(".menu-icon");
+const openMenu = document.querySelector(".menu");
 const closeMenu = document.querySelector(".close-menu");
 const sideBar = document.querySelector(".sidebar-container");
 const menuList = document.querySelector(".menu-sidebar");
