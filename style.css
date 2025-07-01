@@ -339,11 +339,17 @@ Global Variables
   position: relative;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
 }
 
 .cart-icon{
     margin-left: 4vw;
     transition: var(--transition);
+    position: relative;
 }
 
 .cart-icon:active{
@@ -357,10 +363,11 @@ Global Variables
   padding: 0.3em;
   border-radius: 100%;
   color: #fff;
-  top: -10px;
-  right: 0;
+  top: -0.6em;
+  left: 50%;
+  transform: translate3d(-25%, 0, 0);
   z-index: 100;
-  font-size: clamp(1px, 0.2rem + 2vw, 12px);
+  font-size: clamp(1px, 0.2rem + 2vw, 15px);
 }
 
 .counter.count{

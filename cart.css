@@ -220,6 +220,25 @@ h1 {
   position: relative;
 }
 
+#quote-form label input{
+  border-radius: 5px;
+  padding: 0.1em 0.2em;
+  font-family: var(--ff-secondary);
+}
+
+#quote-form button{
+  font-family: var(--ff-secondary);
+  background-color: var(--clr-primary);
+  color: #fff;
+  padding: 0.2em 0.4em;
+  border-style: none;
+  border-radius: 5px;
+}
+
+h2{
+  margin-bottom: 1em;
+}
+
 .close {
   position: absolute;
   top: 8px;
