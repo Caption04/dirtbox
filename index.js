@@ -264,10 +264,10 @@ vehicleContainer.addEventListener('click', (e) => {
 });
 
 // Cart Button
-const cartButton = document.querySelector(".cart");
-cartButton.addEventListener("click", ()=>{
-    window.location.href = 'https://caption04.github.io/cart.html';
-})
+// const cartButton = document.querySelector(".cart");
+// cartButton.addEventListener("click", ()=>{
+//     window.location.href = 'https://caption04.github.io/cart.html';
+// })
 
 
 // console.log(existingCart.length)
