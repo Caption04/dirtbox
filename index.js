@@ -75,7 +75,7 @@ footerLogo.addEventListener("click", () => {
 //////////////////////////////////
 ///BACKEND DATA COMMUNICATION
 //////////////////////////////////
-fetch('http://localhost:3000/data')
+fetch('https://dirtbox.onrender.com')
 .then(res => res.json())
 .then(data => {
     var Data = data;
@@ -108,7 +108,7 @@ function vehicleListing(arr){
                     </p>
                     <div class="section-btns">
                         <button type="button" class="cart-btn section-btn">Add to Cart</button>
-                        <button type="button" class="reserve-btn section-btn">Reserve Now</button>
+                        <a href="tel:+263774685899" class="reserve-btn section-btn">Reserve Now</a>
                     </div>
                     <div class="rent-form hidden">
                     <label>From: <input type="date" class="from-date"></label>
@@ -183,7 +183,7 @@ const buttonArray = arr.reduce((product, item) => {
                         </p>
                         <div class="section-btns">
                             <button type="button" class="cart-btn section-btn">Add to Cart</button>
-                            <button type="button" class="reserve-btn section-btn">Reserve Now</button>
+                            <a href="tel:+263774685899" class="reserve-btn section-btn">Reserve Now</a>
                         </div>
                         <div class="rent-form hidden">
                             <label>From: <input type="date" class="from-date"></label>
