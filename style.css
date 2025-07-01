@@ -648,6 +648,7 @@ h1{
 .reserve-btn{
     background: var(--clr-primary);
     color: white;
+    text-decoration: none;
 }
 
 .reserve-btn:hover{
