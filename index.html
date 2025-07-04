@@ -20,7 +20,7 @@
         <ul class="menu-sidebar">
             <li><a href="index.html">Home</a></li>
             <li><a href="#equipment" class="vehicle-sideBar">Vehicles</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
         <div class="sidebar-logo-container">
@@ -47,17 +47,9 @@
 
     <!-- Search for Desktop -->
     <form class="search-bar">
-      <input type="text" placeholder="Search vehicle..." />
-      <button type="submit" class="search-large-screen"><i class="fa fa-search"></i></button>
-        <!-- <div class="extras-big">
-            <p class="suggested-search-big">Suggested Search</p>
-            <ul class="search-selection-big">
-            <li><a href="#equipment" class="vehicle-search">~ Vehicles</a></li>
-            <li><a href="#">~ Contact Us</a></li>
-            <li><a href="#">~ Certifications</a></li>
-            <li><a href="#">~ Guarantees</a></li>
-            </ul>
-      </div -->
+        <input type="text" placeholder="Search vehicle..." />
+        <div id="suggestions" class="suggestion-box"></div>
+        <button type="submit" class="search-large-screen"><i class="fa fa-search"></i></button>
     </form>
 
     <button class="search">
@@ -84,10 +76,8 @@
             </ul>
       </div>
     </form>
-    <!-- <button class="whatsapp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </button> -->
 
+    
     <a href="cart.html" class="cart">
         <i class="cart-icon fa-solid fa-cart-shopping"><p class="counter"></p></i>
     </a> 
@@ -96,16 +86,16 @@
         <ul class="nav-list">
             <li><a href="index.html" class="home">Home</a></li>
             <li><a href="#equipment" class="home">Vehicles</a></li>
-            <li><a href="#" class="home">About Us</a></li>
+            <li><a href="about.html" class="home">About Us</a></li>
             <li><a href="#" class="home">Contact Us</a></li>
         </ul>
     </nav>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Reliable Earthmoving Equipment <span style="color: #163987;">Rentals</span></h1>
-            <p>Get the machines you need, when you need them fast, affordable, and professional.</p>
-            <button type="button" class="hero-btn">Browse Vehicles</a>
+            <h1 class="animate">Reliable Earthmoving Equipment <span style="color: #163987;">Rentals</span></h1>
+            <p class="animate">Get the machines you need, when you need them fast, affordable, and professional.</p>
+            <button type="button" class="hero-btn animate">Browse Vehicles</a>
         </div>
     </section>
 
@@ -184,7 +174,7 @@
     </section>
 
     <section class="cat-help-banner">
-    <div class="cat-help-content">
+    <div class="cat-help-content help-banner">
         <h2 class="help-title">Not Sure Which Equipment You Need?</h2>
         <p>Tell us about your project and we’ll help you choose the right machine for the job.</p>
         <a href="https://wa.me/263780837493?text=Hey%20there,%20id%20like%20to%20inquire%20about%20your%20vehicles" class="cat-help-btn" target="_blank">Chat With Us on WhatsApp</a>
@@ -193,16 +183,16 @@
 
     <section class="guarantee-section">
         <h2>Our Guarantee</h2>
-        <div class="guarantee-items">
+        <div class="guarantee-items left-guarantee">
             <div class="guarantee-card">
                 <h3>Reliable Machines</h3>
                 <p>All equipment is maintained and ready to perform on delivery.</p>
             </div>
-            <div class="guarantee-card">
+            <div class="guarantee-card right-guarantee">
                 <h3>On-Time Delivery</h3>
                 <p>We deliver when we say we will, no delays, no excuses.</p>
             </div>
-            <div class="guarantee-card">
+            <div class="guarantee-card left-guarantee">
                 <h3>Professional Support</h3>
                 <p>Friendly, knowledgeable support from inquiry to handover.</p>
             </div>
@@ -211,7 +201,7 @@
 
     <section class="testimonials">
         <h2>What Our Clients Say</h2>
-        <div class="testimonial-cards">
+        <div class="testimonial-cards left-guarantee">
             <div class="testimonial-card">
                 <p>"Excellent service! The equipment was delivered on time and worked flawlessly."</p>
                 <h4>– Tendai M.</h4>
@@ -228,7 +218,7 @@
     </section>
 
     <section class="cta-reserve">
-        <div class="cta-reserve-content">
+        <div class="cta-reserve-content rise-reserve">
             <h2>Ready to Reserve Your Equipment?</h2>
             <p>Browse available vehicles and lock in your rental today.</p>
             <div class="cta-buttons">

@@ -15,7 +15,7 @@ function buildCartItem(item) {
       <div class="cart-item-details">
         <h2>${item.name}</h2>
         <p>${item.description}</p>
-        <p class="dates">From: ${item.fromDate} To: ${item.toDate}</p>
+        <p class="dates">At: ${item.location} <br> For: ${item.Hours} Hours</p>
         <button class="remove-item">Remove</button>
       </div>
     </div>
@@ -111,9 +111,10 @@ quoteForm.addEventListener('submit', (e) => {
     user_name: name,
     user_email: email,
     cart: cartItems.map(item => `
-      Vehicle: ${item.name}
-      From: ${item.fromDate}
-      To: ${item.toDate}
+      Vehicle: ${item.name};
+      Site: ${item.location};
+      Estimated Hours of Use: ${item.Hours};
+      Phone Number: ${item.Number};
     `).join('\n\n')
   };
 

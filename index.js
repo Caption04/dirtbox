@@ -1,9 +1,30 @@
+// Effects on load(ANIMATIONS)
+const header = document.querySelector(".header");
+const heroContent = document.querySelectorAll(".animate");
+const helpBanner = document.querySelector(".help-banner");
+const rightGuarantee = document.querySelector(".right-guarantee");
+const leftGuarantee = document.querySelectorAll(".left-guarantee");
+const riseReserve = document.querySelector(".rise-reserve");
+
+
+
+
 //// Page interaction 
 
 /////////////////////////
 //Mobile interactions
 ////////////////////////
-
+const counter = document.querySelector(".counter");
+window.addEventListener("DOMContentLoaded",() => {
+    // Load cart from localStorage or empty array
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    //Cart Button Counter
+    
+    if(cartItems.length > 0){
+    counter.textContent = cartItems.length
+    counter.classList.add("count");
+    }   
+})
 // Menu Open
 const openMenu = document.querySelector(".menu");
 const closeMenu = document.querySelector(".close-menu");
@@ -111,9 +132,11 @@ function vehicleListing(arr){
                         <a href="tel:+263774685899" class="reserve-btn section-btn">Reserve Now</a>
                     </div>
                     <div class="rent-form hidden">
-                    <label>From: <input type="date" class="from-date"></label>
-                    <label>To: <input type="date" class="to-date"></label>
-                    <button class="submit-dates">Submit</button>
+                            <button class="close-rent-form" type=button>Close</button>
+                            <label>Site Location: <input type="text" class="site-location"></label>
+                            <label>Est. Hours of Work: <input type="number" class="hours"></label>
+                            <label>Phone Number: <input type="tel" class="phone-number" placeholder="e.g. 078 123 4567"></label>
+                            <button class="submit-dates">Submit</button>
                     </div>
                 </div>`
     }).join("")
@@ -186,8 +209,10 @@ const buttonArray = arr.reduce((product, item) => {
                             <a href="tel:+263774685899" class="reserve-btn section-btn">Reserve Now</a>
                         </div>
                         <div class="rent-form hidden">
-                            <label>From: <input type="date" class="from-date"></label>
-                            <label>To: <input type="date" class="to-date"></label>
+                            <button class="close-rent-form" type=button>Close</button>
+                            <label>Site Location: <input type="text" class="site-location"></label>
+                            <label>Est. Hours of Work: <input type="number" class="hours"></label>
+                            <label>Phone Number: <input type="tel" class="phone-number" placeholder="e.g. 078 123 4567"></label>
                             <button class="submit-dates">Submit</button>
                         </div>
                     </div>`
@@ -205,6 +230,7 @@ const buttonArray = arr.reduce((product, item) => {
     })
 }
 
+// Close add to cart form
 
 // Add To cart Function
 vehicleContainer.addEventListener('click', (e) => {
@@ -214,18 +240,25 @@ vehicleContainer.addEventListener('click', (e) => {
     const form = container.querySelector('.rent-form');
     form.classList.toggle('hidden');
   }
-
+  if (e.target.classList.contains('close-rent-form')) {
+    console.log('close Button')
+    const btn = e.target;
+    const container = btn.closest('.vehicle-container');
+    const form = container.querySelector('.rent-form');
+    form.classList.add('hidden');
+  }
   if (e.target.classList.contains('submit-dates')) {
     const btn = e.target;
     const container = btn.closest('.vehicle-container');
-    const fromDate = container.querySelector('.from-date').value;
-    const toDate = container.querySelector('.to-date').value;
+    const location = container.querySelector('.site-location').value;
+    const Hours = container.querySelector('.hours').value;
+    const Number = container.querySelector('.phone-number').value;
     const name = container.querySelector('.vehicle-title').textContent.trim();
     const desc = container.querySelector('.vehicle-description').textContent.trim();
     const image = container.querySelector('.vehicle-img').getAttribute('src');
   // Basic validation
-  if (!fromDate || !toDate) {
-    alert('Please select both dates.');
+  if (!location || !Hours ||!Number) {
+    alert('Please fill in all slots');
     return;
   }else{
     const form = container.querySelector('.rent-form');
@@ -237,8 +270,9 @@ vehicleContainer.addEventListener('click', (e) => {
   let rentItem = {
     name,
     description: desc,
-    fromDate,
-    toDate,
+    location,
+    Hours,
+    Number,
     image,
   };
 
@@ -262,13 +296,4 @@ vehicleContainer.addEventListener('click', (e) => {
 }      
 }
 });
-
-// Cart Button
-// const cartButton = document.querySelector(".cart");
-// cartButton.addEventListener("click", ()=>{
-//     window.location.href = 'https://caption04.github.io/cart.html';
-// })
-
-
-// console.log(existingCart.length)
 
